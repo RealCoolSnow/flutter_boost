@@ -84,14 +84,19 @@ public class XPlatformPlugin {
             XPlatformPlugin.this.setClipboardData(text);
         }
 
-        @Override
-        public List<Rect> getSystemGestureExclusionRects() {
-            return XPlatformPlugin.this.getSystemGestureExclusionRects();
-        }
+        // @Override
+        // public List<Rect> getSystemGestureExclusionRects() {
+        //     return XPlatformPlugin.this.getSystemGestureExclusionRects();
+        // }
+
+        // @Override
+        // public void setSystemGestureExclusionRects(@NonNull ArrayList<Rect> rects) {
+        //     XPlatformPlugin.this.setSystemGestureExclusionRects(rects);
+        // }
 
         @Override
-        public void setSystemGestureExclusionRects(@NonNull ArrayList<Rect> rects) {
-            XPlatformPlugin.this.setSystemGestureExclusionRects(rects);
+        public boolean clipboardHasStrings() {
+            return false;
         }
     };
 

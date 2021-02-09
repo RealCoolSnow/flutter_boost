@@ -183,4 +183,8 @@ public class XFlutterTextureView extends TextureView implements RenderSurface {
     }
 
   }
+  @Override
+  public void pause() {
+
+  }
 }

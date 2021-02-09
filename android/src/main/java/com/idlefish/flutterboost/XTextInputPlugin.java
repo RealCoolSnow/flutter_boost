@@ -116,6 +116,26 @@ public class XTextInputPlugin {
             public void clearClient() {
                 clearTextInputClient();
             }
+
+            @Override
+            public void sendAppPrivateCommand(String text,android.os.Bundle bundle) {
+
+            }
+
+            @Override
+            public void setEditableSizeAndTransform(double width, double height, double[] transform) {
+
+            }
+
+            @Override
+            public void finishAutofillContext(boolean b) {
+
+            }
+
+            @Override
+            public void requestAutofill() {
+
+            }
         });
         restartAlwaysRequired = isRestartAlwaysRequired();
 
